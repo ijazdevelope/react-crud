@@ -1,0 +1,20 @@
+@import './variables';
+
+$ns: c-modal;
+
+.#{$ns} {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    padding: 0 1rem;
+    background: $modal-linear-gradient;
+
+    .#{$ns} {
+        &__dialog {
+            max-width: 45rem;
+        }
+    }
+}

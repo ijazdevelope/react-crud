@@ -1,16 +1,24 @@
 import React from 'react';
 
-const Table = () => {
+const Table = ({openModal}) => {
   return (
     <>
-      <h2 className='p-0 mt-2 mb-3'>Employee Data</h2>
-      <table class="table table-bordered text-white">
+      <div className='d-flex justify-content-between align-items-center border-bottom p-0'>
+        <h2 className='p-0 mt-2 mb-3'>Employee Data</h2>
+        <button type="button" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" onClick={openModal}>Add Employee</button>
+      </div>
+      <table className="table mt-2">
         <thead>
           <tr>
             <th scope="col">#</th>
-            <th scope="col">First</th>
-            <th scope="col">Last</th>
-            <th scope="col">Handle</th>
+            <th scope="col">Select</th>
+            <th scope="col">Name</th>
+            <th scope="col">Age</th>
+            <th scope="col">Start Time</th>
+            <th scope="col">End Time</th>
+            <th scope="col">Salary</th>
+            <th scope="col">Hours</th>
+            <th scope="col">Action</th>
           </tr>
         </thead>
         <tbody>

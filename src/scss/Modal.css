@@ -1,0 +1,13 @@
+.c-modal {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  padding: 0 1rem;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+}
+.c-modal .c-modal__dialog {
+  max-width: 45rem;
+}/*# sourceMappingURL=Modal.css.map */
