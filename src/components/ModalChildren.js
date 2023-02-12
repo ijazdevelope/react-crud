@@ -33,6 +33,9 @@ const ModalChildren = ({ openModal, closeModal }) => {
                             <label className="form-check-label" htmlFor="salary">Salary</label>
                             <input type="text" className="form-control" id="salary" placeholder='Salary...' />
                         </div>
+                        <div className="modal-footer">
+                            <button type="submit" className="btn btn-primary">Add Employee</button>
+                        </div>
                     </div>
                 </form>
             </Modal>

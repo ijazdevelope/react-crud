@@ -16,9 +16,6 @@ const Modal = ({ openModal, children, closeModal }) => {
                             <div className="modal-body">
                                 {children}
                             </div>
-                            <div className="modal-footer">
-                                <button type="button" className="btn btn-primary">Add Employee</button>
-                            </div>
                         </div>
                     </div>
                 </div>
